@@ -43,9 +43,28 @@ struct HomeView: View {
                 }
                 .padding(.vertical)
             }
-
             Spacer()
+            
+            NavigationLink(destination:
+                SortingView()
+            ) {
+                Text("Next")
+                    .fontWeight(.heavy)
+                    .font(.title3)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [.pink, .purple]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(40)
+            }
         }
         .padding()
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+            .previewDevice("iPhone 16 Pro")
     }
 }
