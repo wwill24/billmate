@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		99B72B7C2D3B1E0100F90E3E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 99B72B7A2D3B1DFC00F90E3E /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		99B72AF92D34E8CB00F90E3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		99B72AE82D34E8C900F90E3E /* BillMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B72AF82D34E8CB00F90E3E /* BillMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B72B022D34E8CB00F90E3E /* BillMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B72B7A2D3B1DFC00F90E3E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -78,7 +83,9 @@
 				99B72AEA2D34E8C900F90E3E /* BillMate */,
 				99B72AFB2D34E8CB00F90E3E /* BillMateTests */,
 				99B72B052D34E8CB00F90E3E /* BillMateUITests */,
+				99B72B642D3AFE0500F90E3E /* Frameworks */,
 				99B72AE92D34E8C900F90E3E /* Products */,
+				99B72B7A2D3B1DFC00F90E3E /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +97,13 @@
 				99B72B022D34E8CB00F90E3E /* BillMateUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		99B72B642D3AFE0500F90E3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 99B72ADF2D34E8C900F90E3E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				99B72B892D3B470B00F90E3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 99B72AE92D34E8C900F90E3E /* Products */;
 			projectDirPath = "";
@@ -212,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B72B7C2D3B1E0100F90E3E /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BillMate/BillMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BillMate/Preview Content\"";
@@ -421,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BillMate/BillMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BillMate/Preview Content\"";
@@ -552,6 +572,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99B72B892D3B470B00F90E3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 99B72AE02D34E8C900F90E3E /* Project object */;
 }

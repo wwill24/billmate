@@ -1,0 +1,27 @@
+//
+//  .gitignore
+//  BillMate
+//
+//  Created by william wu on 1/17/25.
+//
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.xcworkspace
+*.xcodeproj/project.xcworkspace
+xcuserdata/
+*.swp
+*.lock
+*.log
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# Auth0
+/BillMate/Runner/Auth0.plist
