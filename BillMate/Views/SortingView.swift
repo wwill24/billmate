@@ -8,7 +8,21 @@
 import SwiftUI
 
 struct SortingView: View {
+    @Binding var persons: [String]
+    @Binding var dishes: [(String, Int)]
     var body: some View {
-        Text("Sort")
+        VStack{
+            Text("Sort")
+            Button(action: {
+                
+            }) {
+                
+            }
+            Button(action: {
+                print(persons)
+            }) {
+                Text("Print persons")
+            }
+        }
     }
 }

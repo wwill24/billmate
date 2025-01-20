@@ -35,7 +35,7 @@ struct LandingView: View {
                         .background(LinearGradient(gradient: Gradient(colors: [.pink, .purple]), startPoint: .leading, endPoint: .trailing))
                         .cornerRadius(30)
                 }
-                NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: AddPersonView().navigationBarBackButtonHidden(true)) {
                     Text("Guest")                .padding()
                         .fontWeight(.heavy)
                         .font(.title3)

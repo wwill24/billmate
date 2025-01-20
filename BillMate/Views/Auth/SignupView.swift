@@ -41,7 +41,7 @@ struct SignUpView: View {
                         .cornerRadius(40)
                 }
                 NavigationLink(
-                    destination: HomeView().navigationBarBackButtonHidden(true),
+                    destination: AddPersonView().navigationBarBackButtonHidden(true),
                     isActive: $isSignedUp,
                     label: { EmptyView() }
                 )
